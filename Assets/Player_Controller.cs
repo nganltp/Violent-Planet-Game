@@ -6,6 +6,13 @@ using UnityEngine;
 public class Player_Controller : MonoBehaviour
 {
 
+	//by Ngan
+	[SerializeField]
+	private AudioSource  audioSource;
+	[SerializeField]
+	private AudioClip gun,ice,fire;
+
+
     // Use this for initialization
     public Text show_point;
     public GameObject bullet;
@@ -85,6 +92,7 @@ public class Player_Controller : MonoBehaviour
     }
     public void unlock_Ultimate()
     {
+		audioSource.PlayOneShot(fire);
         if (lock_fire_effect) {
             lock_ultimate = true;
             lock_fire_effect = false;
@@ -150,6 +158,7 @@ public class Player_Controller : MonoBehaviour
         {
             lock_fire_effect = true;
             button_untimate.animator.enabled = true;
+
             //Phat hieu ung dom lua
         }
     }

@@ -57,6 +57,7 @@
      <Compile Include="Assets\Knife.cs" />
      <Compile Include="Assets\Plane.cs" />
      <Compile Include="Assets\Player_Controller.cs" />
+     <Compile Include="Assets\Script\BtnClickSound.cs" />
      <Compile Include="Assets\Script\Credit\backbutton.cs" />
      <Compile Include="Assets\Script\EventSystem\Controller.cs" />
      <Compile Include="Assets\Script\FinishLose\PlayAgain.cs" />
