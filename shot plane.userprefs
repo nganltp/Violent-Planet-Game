@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\EventSystem\Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\BtnClickSound.cs">
     <Files>
-      <File FileName="Assets\Player_Controller.cs" Line="67" Column="3" />
-      <File FileName="Assets\Script\EventSystem\Controller.cs" Line="12" Column="36" />
+      <File FileName="Assets\Player_Controller.cs" Line="12" Column="33" />
+      <File FileName="Assets\Script\EventSystem\Controller.cs" Line="25" Column="3" />
       <File FileName="Assets\Script\Credit\backbutton.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\FinishLose\PlayAgain.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\talk1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\BtnClickSound.cs" Line="24" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
