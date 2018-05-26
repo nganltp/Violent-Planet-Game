@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class Player_Controller : MonoBehaviour
 {
+	//by Ngan
+	[SerializeField]
+	private AudioSource  audioSource;
+	[SerializeField]
+	private AudioClip gun;
 
     // Use this for initialization
     public Text show_point;
@@ -46,7 +51,8 @@ public class Player_Controller : MonoBehaviour
         {
            
             GameObject Bullet = Instantiate(bullet, new Vector2(point_fire.transform.position.x, point_fire.transform.position.y), Quaternion.identity);
-            if (lock_ultimate)
+			audioSource.PlayOneShot(gun);
+			if (lock_ultimate)
             {
                 GameObject Bullet1 = Instantiate(bullet, new Vector2(point_fire.transform.position.x, point_fire.transform.position.y), Quaternion.Euler(new Vector3(0, 0, 20)));
                 GameObject Bullet2 = Instantiate(bullet, new Vector2(point_fire.transform.position.x, point_fire.transform.position.y), Quaternion.Euler(new Vector3(0, 0, -20)));
