@@ -5,8 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Scenes: []
 =======
+=======
+>>>>>>> brand1
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Credit.unity
@@ -26,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/scene2.unity
     guid: 8f5d631f9af54314cbf07c563cd16b3a
+<<<<<<< HEAD
 >>>>>>> sound
+=======
+  - enabled: 1
+    path: Assets/Scenes/scene1.unity
+    guid: cd341ac23a5107645b014b3c737792ee
+>>>>>>> brand1

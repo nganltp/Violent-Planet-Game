@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/FinishWin.unity
+=======
+- path: Assets/Scenes/scene2.unity
+>>>>>>> brand1
   isLoaded: 1
   isActive: 1
