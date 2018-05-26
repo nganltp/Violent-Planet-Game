@@ -5,7 +5,10 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 
 public class Controller : MonoBehaviour {
-
+	[SerializeField]
+	private AudioSource  audioSource;
+	[SerializeField]
+	private AudioClip press;
 	// Use this for initialization
 	public void StartButton()
 	{
@@ -19,6 +22,7 @@ public class Controller : MonoBehaviour {
 	}
 	public void CreditButton()
 	{
+		
 		Application.LoadLevel ("Credit");
 		Debug.Log ("clicked Credit");
 	}

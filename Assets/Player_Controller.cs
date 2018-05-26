@@ -56,7 +56,6 @@ public class Player_Controller : MonoBehaviour
             {
                 GameObject Bullet1 = Instantiate(bullet, new Vector2(point_fire.transform.position.x, point_fire.transform.position.y), Quaternion.Euler(new Vector3(0, 0, 20)));
                 GameObject Bullet2 = Instantiate(bullet, new Vector2(point_fire.transform.position.x, point_fire.transform.position.y), Quaternion.Euler(new Vector3(0, 0, -20)));
-				audioSource.PlayOneShot(fire);
                 check_End_Ultimate();
             }
             start_time_bullet = Time.time + time_each_fire; //moi giay ban 1 vien
@@ -83,6 +82,7 @@ public class Player_Controller : MonoBehaviour
     }
     public void unlock_Ultimate()
     {
+		audioSource.PlayOneShot(fire);
         if (lock_fire_effect) {
             lock_ultimate = true;
             lock_fire_effect = false;
