@@ -71,8 +71,13 @@ public class Enermy_Controller : MonoBehaviour {
         if (Player.GetComponent<Player_Controller>().Point_Player >= Point_See_Boss&&!see_boss)
         {
             see_boss = true;
-            Boss.SetActive(true);
-            Boss.GetComponent<Bosscene1>().Slider_Blood.enabled = true;
+			StartCoroutine (See_boss ());
         }
     }
+	IEnumerator See_boss(){
+		yield return new WaitForSeconds (5f);
+		Boss.SetActive(true);
+		Boss.GetComponent<Bosscene1>().Slider_Blood.enabled = true;
+
+	}
 }
