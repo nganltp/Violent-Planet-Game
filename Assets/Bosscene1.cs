@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Bosscene1 : MonoBehaviour {
 
@@ -72,7 +73,7 @@ public class Bosscene1 : MonoBehaviour {
         if (Time.time > start_time_knife)
         {
             GameObject knife_ref = Instantiate(Knife, gameObject.transform.position, Quaternion.identity);
-            start_time_knife = Time.time + delta_oscillate;
+            start_time_knife = Time.time + delta_time_knife;
         }
     }
     void OnTriggerEnter2D(Collider2D other)
@@ -94,10 +95,16 @@ public class Bosscene1 : MonoBehaviour {
             {
                 GameObject exp = Instantiate(explosion, transform.position, Quaternion.identity);
                 speed_high = 0;
+                win_game();
                 Destroy(gameObject, 0.5f);
                 Destroy(exp, 1f);
             }
         }
+    }
+    public void win_game()
+    {
+        PlayerPrefs.SetFloat("PlayerX", GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>().Point_Player);
+        SceneManager.LoadScene("FinishWin");
     }
     //IEnumerator change_color_boss()
     //{

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Controller : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class Player_Controller : MonoBehaviour
     public float time_frozen;
     public float Point_Player;
     public float time_end_ultimate;
+    private bool lose_game;
     void Start()
     {
         start_time_bullet = Time.time;
@@ -46,6 +48,7 @@ public class Player_Controller : MonoBehaviour
         slider_blood.maxValue = blood_player;
         slider_blood.value = blood_player;
         Point_Player = 0;
+        lose_game = false;
     }
 
     // Update is called once per frame
@@ -65,6 +68,7 @@ public class Player_Controller : MonoBehaviour
         }
         check_Ultimate();
         check_Frozen();
+        check_lose();
         //Ultimate();
 
     }
@@ -173,6 +177,19 @@ public class Player_Controller : MonoBehaviour
     {
         Point_Player += point;
         show_point.text = "Point: " + Point_Player;
+    }
+    public void check_lose()
+    {
+        if (blood_player <= 0 && !lose_game)
+        {
+            lose_game = true;
+            Save_Point();
+            SceneManager.LoadScene("FinishLose");
+        }
+    }
+    public void Save_Point()
+    {
+        PlayerPrefs.SetFloat("PlayerX", Point_Player);
     }
    
 }
