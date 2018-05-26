@@ -20,9 +20,14 @@ public class Bosscene1 : MonoBehaviour {
     public GameObject Knife;
     public GameObject explosion;
     public GameObject point_attack;
+    public GameObject Slider_temp;
     public Slider Slider_Blood;
     public float blood_boss;
+   
     void Start () {
+        //Slider_Blood.enabled = false;
+        //Debug.Log("ahihi");
+        Slider_temp.SetActive(false);
         oldposition = transform.position.y;
         highposition = oldposition + delta_oscillate;
         lowposition = oldposition - delta_oscillate;
@@ -32,8 +37,10 @@ public class Bosscene1 : MonoBehaviour {
         Slider_Blood.minValue = 0;
         Slider_Blood.value = blood_boss;
         move = true;
-        Slider_Blood.enabled = false;
-	}
+       
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -43,7 +50,7 @@ public class Bosscene1 : MonoBehaviour {
         }
         else
         {
-            move = false;
+            move = false;Slider_temp.SetActive(true);
             make_oscillate();
         }
        
@@ -77,14 +84,28 @@ public class Bosscene1 : MonoBehaviour {
             {
                 blood_boss -= damage_amount;
                 Slider_Blood.value = blood_boss;
+                //gameObject.GetComponent<SpriteRenderer>().material.color = Color.red;
+                //gameObject.GetComponent<SpriteRenderer>().material.color = Color.black;
+                //StartCoroutine(change_color_boss());
+                //GameObject exp = Instantiate(explosion, transform.position, Quaternion.identity);
+                //Destroy(exp, 0.2f);
             }
             else
             {
                 GameObject exp = Instantiate(explosion, transform.position, Quaternion.identity);
-                Destroy(gameObject, 0.01f);
+                speed_high = 0;
+                Destroy(gameObject, 0.5f);
                 Destroy(exp, 1f);
             }
         }
     }
+    //IEnumerator change_color_boss()
+    //{
+    //    yield return new WaitForSeconds(1f);
+    //    gameObject.GetComponent<SpriteRenderer>().material.color = Color.red;
+    //    yield return new WaitForSeconds(1f);
+    //    gameObject.GetComponent<SpriteRenderer>().material.color = Color.black;
+    //}
+    
     
 }

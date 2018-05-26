@@ -6,7 +6,7 @@ public class Knife : MonoBehaviour
 {
 
     // Use this for initialization
-    float speed;
+    public float speed;
     public float damage;
     public GameObject target;
     public GameObject explosion;
@@ -35,6 +35,13 @@ public class Knife : MonoBehaviour
             GameObject exp = Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject, 0.01f);
             Destroy(exp, 0.5f);
+        }
+        if (other.gameObject.GetComponent<Player_Controller>())
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>().Damage(damage);
+            GameObject exp = Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(exp, 0.5f);
+            Destroy(gameObject, 0.01f);
         }
     }
 }
