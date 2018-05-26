@@ -9,20 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Credit.unity
     guid: 6af2488034869b04db95f363905f26d0
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 9544731797e70bd4a89ba4a6bf64e404
-  - enabled: 1
     path: Assets/Scenes/FinishLose.unity
     guid: 9de44b8b6a3c3304d90958cc0f998377
   - enabled: 1
     path: Assets/Scenes/FinishWin.unity
     guid: f6edd912f20bad74b97b38c0a8ce5374
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/IntroGame.unity
     guid: 34021ca27796e86499f72838ed9bacf7
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9544731797e70bd4a89ba4a6bf64e404
+  - enabled: 1
+    path: Assets/scene2/scene2.unity
+    guid: 8f5d631f9af54314cbf07c563cd16b3a
+  m_configObjects: {}

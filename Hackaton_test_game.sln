@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton_test_game", "Assembly-CSharp-firstpass.csproj", "{FC9E2DA8-6857-2F86-122C-2834A5E3BCA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton_test_game", "Assembly-CSharp.csproj", "{E08E3911-EFA5-1C4B-063B-9395C526E4F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton_test_game", "Assembly-CSharp-Editor-firstpass.csproj", "{2DBD56BA-A1FC-CE1E-9FCD-787914C7926D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC9E2DA8-6857-2F86-122C-2834A5E3BCA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9E2DA8-6857-2F86-122C-2834A5E3BCA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9E2DA8-6857-2F86-122C-2834A5E3BCA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9E2DA8-6857-2F86-122C-2834A5E3BCA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E08E3911-EFA5-1C4B-063B-9395C526E4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E08E3911-EFA5-1C4B-063B-9395C526E4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E08E3911-EFA5-1C4B-063B-9395C526E4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08E3911-EFA5-1C4B-063B-9395C526E4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBD56BA-A1FC-CE1E-9FCD-787914C7926D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBD56BA-A1FC-CE1E-9FCD-787914C7926D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBD56BA-A1FC-CE1E-9FCD-787914C7926D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBD56BA-A1FC-CE1E-9FCD-787914C7926D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
