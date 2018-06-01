@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61007386332625354}
   m_Layer: 0
   m_Name: knife
-  m_TagString: Untagged
+  m_TagString: plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,9 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18bf268a8707dba478b497f1570c4281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  speed: 0
+  damage: 10
   target: {fileID: 1865613473628102, guid: 42f46b3602ec3334289d2363635e2a03, type: 2}
-  explosion: {fileID: 1314427131793192, guid: 3e6fa81fd1e31ac4fb21fc897d6ee0ae, type: 2}
+  explosion: {fileID: 1752549373145848, guid: a4b8f5939025d1a45baa459894b5f309, type: 2}
 --- !u!212 &212150703432683748
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -111,6 +112,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -126,6 +128,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

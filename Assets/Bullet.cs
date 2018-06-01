@@ -28,5 +28,9 @@ public class Bullet : MonoBehaviour {
             speed = 0;
             Destroy(gameObject, 0.01f);
         }
+		if (other.GetComponent<Bosscene1> ()) {
+			speed = 0;
+			Destroy(gameObject, 0.01f);
+		}
     }
 }

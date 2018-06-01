@@ -107,13 +107,13 @@ namespace UnityStandardAssets.CrossPlatformInput
                inputVector.y * (padImg.rectTransform.sizeDelta.y / 2.4f));
             //joyStickimg.rectTransform.anchoredPosition = new Vector2(last_x,
             //    inputVector.y * (padImg.rectTransform.sizeDelta.y / 2.4f));
-            if (current.y >= 5)
+            if (current.y > 0 && current.y + 0.1f >= 5)
             {
-                Player.GetComponent<Transform>().position = new Vector2(current.x,5);
+                Player.GetComponent<Transform>().position = new Vector2(current.x, 5);
             }
-            if (current.y <= -5)
+            if (current.y < 0 && current.y - 0.1f <= -5)
             {
-                Player.GetComponent<Transform>().position = new Vector2(current.x,-5);
+                Player.GetComponent<Transform>().position = new Vector2(current.x, -5);
             }
 
         }
@@ -140,5 +140,6 @@ namespace UnityStandardAssets.CrossPlatformInput
 				m_VerticalVirtualAxis.Remove();
 			}
 		}
+       
 	}
 }

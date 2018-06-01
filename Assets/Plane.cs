@@ -16,7 +16,7 @@ public class Plane : MonoBehaviour
     void Start()
     {
         blood = Random.Range(3, 8);
-        speed = Random.Range(2, 5);
+        speed = Random.Range(3, 7);
         show_blood.text = blood.ToString();
     }
 
@@ -49,6 +49,7 @@ public class Plane : MonoBehaviour
         if(blood == 0)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>().get_point(1);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>().Say_Oh();
             Destroy(gameObject, 0.1f);
         }
     }
