@@ -54,7 +54,7 @@ public class Enermy_Controller : MonoBehaviour {
     {
         if (!see_boss)
         {
-            int temp_enermy = Random.Range(0, 7);
+            int temp_enermy = Random.Range(0, sample_enermy.Length - 1);
             for (int i = 0; i < 5; ++i)
             {
                 array_bit[i] = Random.Range(-1, 2);
