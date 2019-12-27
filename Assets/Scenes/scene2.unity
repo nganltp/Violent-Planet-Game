@@ -7320,7 +7320,7 @@ MonoBehaviour:
   - {fileID: 1555780773174574, guid: 525824f939ffbd64480637e85e6ccdf3, type: 3}
   Sample_text: {fileID: 114984848270219590, guid: 4277b10fd24dd8b4aa87fe5a428363b2,
     type: 3}
-  Point_See_Boss: 0
+  Point_See_Boss: 50
   deltatime_born_enermy: 4
 --- !u!1 &1729568165
 GameObject:
