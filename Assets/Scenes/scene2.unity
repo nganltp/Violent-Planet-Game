@@ -468,7 +468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4039288070577964, guid: e28ac95d00367f643bbf77120c2d41b6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 4039288070577964, guid: e28ac95d00367f643bbf77120c2d41b6, type: 2}
       propertyPath: m_LocalPosition.y
@@ -497,6 +497,14 @@ PrefabInstance:
     - target: {fileID: 4039288070577964, guid: e28ac95d00367f643bbf77120c2d41b6, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039288070577964, guid: e28ac95d00367f643bbf77120c2d41b6, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039288070577964, guid: e28ac95d00367f643bbf77120c2d41b6, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 114794444194185960, guid: e28ac95d00367f643bbf77120c2d41b6,
         type: 2}
@@ -6839,7 +6847,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8958a675b4ab1734cb80c8326db1dd0a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0583f14317d2408ba729c3edaa20ff7, type: 3}
   m_Color: {r: 0.9852941, g: 0.9708045, b: 0.9708045, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6859,8 +6867,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560815302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 0.23, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.4, y: 0.23, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -6882,7 +6890,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5.12}
+    oldSize: {x: 7.24, y: 5.5}
     newSize: {x: 5, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7148,7 +7156,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560815302}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 61c037aaf2ad7e74da193bb18c5d7299, type: 2}
   m_CullingMode: 0
@@ -7312,7 +7320,7 @@ MonoBehaviour:
   - {fileID: 1555780773174574, guid: 525824f939ffbd64480637e85e6ccdf3, type: 3}
   Sample_text: {fileID: 114984848270219590, guid: 4277b10fd24dd8b4aa87fe5a428363b2,
     type: 3}
-  Point_See_Boss: 50
+  Point_See_Boss: 0
   deltatime_born_enermy: 4
 --- !u!1 &1729568165
 GameObject:
