@@ -6804,7 +6804,8 @@ MonoBehaviour:
   damage_amount: 1
   speed: 3
   Knife: {fileID: 1670502864381940, guid: dfa0a4dc7c251c848b4fdb079a5415bf, type: 3}
-  explosion: {fileID: 1570505337238446, guid: a02e6a65e0534f94785932abbf58ba6e, type: 3}
+  explosion: {fileID: 4081589511906653611, guid: 1aadc17cd70aa46e1850a2607f20bda9,
+    type: 3}
   point_attack: {fileID: 1043639040}
   Slider_temp: {fileID: 1051735597}
   Slider_Blood: {fileID: 1051735599}
@@ -7320,7 +7321,7 @@ MonoBehaviour:
   - {fileID: 1555780773174574, guid: 525824f939ffbd64480637e85e6ccdf3, type: 3}
   Sample_text: {fileID: 114984848270219590, guid: 4277b10fd24dd8b4aa87fe5a428363b2,
     type: 3}
-  Point_See_Boss: 50
+  Point_See_Boss: 30
   deltatime_born_enermy: 4
 --- !u!1 &1729568165
 GameObject:
