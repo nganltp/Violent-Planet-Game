@@ -5,14 +5,14 @@ GVHD: thầy Huỳnh Tuấn Anh
 
 
 ## Introduction
-*Mục đích của game là đưa ra cái nhìn chi tiết, đơn giãn về yêu cầu cho game “Shooting”.
+Mục đích của game là đưa ra cái nhìn chi tiết, đơn giãn về yêu cầu cho game “Shooting”.
 
-*Công nghệ sử sụng: Unity
+Công nghệ sử sụng: Unity
    
 
 ## Shooting Game
 
-*Người chơi vào vai phi thuyền đang trong nhiệm vụ đi bảo vệ trái đất.
+Người chơi vào vai phi thuyền đang trong nhiệm vụ đi bảo vệ trái đất.
 
 ## Giao diện chính cũa game
    *Màn hình game chính:
