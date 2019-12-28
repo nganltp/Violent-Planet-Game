@@ -6,6 +6,7 @@ GVHD: thầy Huỳnh Tuấn Anh
 
 ## Introduction
 *Mục đích của game là đưa ra cái nhìn chi tiết, đơn giãn về yêu cầu cho game “Shooting”.
+
 *Công nghệ sử sụng: Unity
    
 
