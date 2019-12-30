@@ -13,8 +13,11 @@ Công nghệ sử sụng: Unity
 ## Shooting Game
 
 Người chơi vào vai phi thuyền đang trong nhiệm vụ đi bảo vệ trái đất.
+
 Người chơi sẽ có 2 tuyệt chiêu là bắnx3 và đóng băng đối thủ. Khi kẻ xâm lược vượt qua hàng rào chắn cũng là lúc người chơi bị mất máu.
+
 Khi chơi đến mức điểm nhất định, người chơi sẽ gặp boss cuối, có khả năng bắn lại và khó chết hơn những đối thủ thông thường.
+
 Trò chơi sẽ kết thúc khi người chơi đánh thắng được boss cuối hoặc hết máu.
 
 
